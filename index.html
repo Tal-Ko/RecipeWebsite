@@ -7,11 +7,37 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="navbar">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+	<div class="navbar" id="navbar">
 		<a href="index.html#Starters">Starters</a>
 		<a href="index.html#Main">Main Dishes</a>
 		<a href="index.html#Desserts">Desserts</a>
 	</div>
+
+	<script>
+	$(document).ready(function () {
+		$('div.navbar > a').click(function (e) {
+			$('div.navbar > a').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+	</script>
+
+	<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+		if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.top = "0";
+		} else {
+			document.getElementById("navbar").style.top = "-50px";
+		}
+		prevScrollpos = currentScrollPos;
+	}
+	</script>
 
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,7 +53,8 @@
 		<h1>
 			<img src="resources/icons/Sapir.png">
 			Sapir and Tal's awesome recipes
-			<img src="resources/icons/Tal.png"></h1>
+			<img src="resources/icons/Tal.png">
+		</h1>
 	</div>
 	<div class="menu">
 		<div>
