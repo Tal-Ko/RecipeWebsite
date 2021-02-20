@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>
 מתכונים מהממים
@@ -8,11 +8,11 @@
 </head>
 <body>
 	<div class="navbar">
-		<a href="#home">מנות ראשונות</a>
-		<a href="#news">מנות עיקריות</a>
-		<a href="#contact">קינוחים</a>
+		<a href="index.html#Starters">Starters</a>
+		<a href="index.html#Main">Main Dishes</a>
+		<a href="index.html#Desserts">Desserts</a>
 	</div>
-	
+
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -22,145 +22,62 @@
 	  <a href="#"><i class="fa fa-envelope"></i></a>
 	  <a href="#"><i class="fa fa-globe"></i></a>
 	</div>
-	
-	<div class="recepies">
 
-	<div class="row">
-		<div class="column">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="קובה-סלק.jpg" class="food-image">
-					</div>
-					<div class="flip-card-back">
-						<h1></h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
+	<div class="menu-title">
+		<h1>
+			<img src="resources/icons/Sapir.png">
+			Sapir and Tal's awesome recipes
+			<img src="resources/icons/Tal.png"></h1>
+	</div>
+	<div class="menu">
+		<div>
+			<img src="resources/icons/cook-hat.png">
+			<h1>Menu</h1>
 		</div>
-		<div class="column">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="אוזני-המן.jpg" class="food-image">
-					</div>
-					<div class="flip-card-back">
-						<h1></h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
+		<div>
+			<a href="#Starters"><h2 id="Starters">Starters  <img src="resources/icons/starters.png"></h2></a>
+			<ul style="list-style: none;" id="starters">
+			</ul>
 		</div>
-		<div class="column">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="oatmeal.jpg" class="food-image">
-					</div>
-					<div class="flip-card-back">
-						<h1></h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
+		<div>
+			<a href="#Main"><h2 id="Main">Main Dishes  <img src="resources/icons/main-dishes.png"></h2></a>
+			<ul style="list-style: none;" id="mains">
+			</ul>
 		</div>
-		<div class="column">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="בורקס.jpg" class="food-image">
-					</div>
-					<div class="flip-card-back">
-						<h1></h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="עוגיות שוקולד ציפס שיבולת.jpg" class="food-image">
-					</div>
-					<div class="flip-card-back">
-						<h1></h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
+		<div>
+			<a href="#Desserts"><h2 id="Desserts">Desserts  <img src="resources/icons/desserts.png"></h2></a>
+			<ul style="list-style: none;" id="desserts">
+			</ul>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="column">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="נאצוס.jpg" class="food-image">
-					</div>
-					<div class="flip-card-back">
-						<h1></h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="פנקייקס שיבולת שועל.jpg" class="food-image">
-					</div>
-					<div class="flip-card-back">
-						<h1></h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="אבוקדו ביצה עלומה.jpg" class="food-image">
-					</div>
-					<div class="flip-card-back">
-						<h1></h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="עוגיות פיסטוק.jpg" class="food-image">
-					</div>
-					<div class="flip-card-back">
-						<h1></h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="בייגלה.jpg" class="food-image">
-					</div>
-					<div class="flip-card-back">
-						<h1></h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	</div>
+	<script src="recipes_data.js"></script>
+	<script>
+	function createElements(id, items) {
+		var ul = document.getElementById(id);
+
+		for (var i = 0; i < items.length; i++) {
+			var item = items[i];
+
+			// Create link
+			var linkItem = document.createElement("a");
+			linkItem.setAttribute(
+				"href",
+				"recipes.html?slide-index=" + (i + 1).toString() + "&category=" + id
+				);
+			linkItem.textContent = item;
+
+			// Create list item
+			var listItem = document.createElement("li");
+			listItem.appendChild(linkItem);
+
+			ul.appendChild(listItem);
+		}
+	}
+
+	createElements("starters", starters);
+	createElements("mains", mains);
+	createElements("desserts", desserts);
+	</script>
 </body>
-</html> 
+</html>
